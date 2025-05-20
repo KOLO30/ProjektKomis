@@ -1,6 +1,7 @@
 public class MenuSprzedawcy {
     public void menuView(){
         Menu menu = new Menu();
+        ListaSamochodow listaSamochodow = new ListaSamochodow();
         System.out.println("Co chcesz zrobic? \n" +
                 "1. Oglądać samochody\n" +
                 "2. Dodać samochód\n" +
@@ -10,8 +11,10 @@ public class MenuSprzedawcy {
         int a = inputData.InputInt();
         switch (a){
             case 1:
+                listaSamochodow.wyswietl();
                 break;
             case 2:
+                //listaSamochodow.dodajAuto();
                 break;
             case 3:
                 break;

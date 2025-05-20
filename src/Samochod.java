@@ -1,13 +1,15 @@
-public class Samochod {
+public abstract class Samochod {
     protected int przebieg;
-    protected int masa;
-    protected int iloscDrzwi;
-    protected int iloscMiejsc;
+    protected String marka;
+    protected String model;
+    protected int rocznik;
+    protected double cena;
 
-    public Samochod(int przebieg, int masa, int iloscDrzwi, int iloscMiejsc) {
+    public Samochod(int przebieg, String marka, String model, int rocznik, double cena) {
         this.przebieg = przebieg;
-        this.masa = masa;
-        this.iloscDrzwi = iloscDrzwi;
-        this.iloscMiejsc = iloscMiejsc;
+        this.marka = marka;
+        this.model = model;
+        this.rocznik = rocznik;
+        this.cena = cena;
     }
 }
