@@ -7,4 +7,14 @@ public class Elektryk extends Samochod {
         super(przebieg, marka, model, rocznik, cena);
         this.pojemnoscBaterii = pojemnoscBaterii;
     }
+    public String toString() {
+        return
+                przebieg+" "+
+                        marka + " " +
+                        model + " " +
+                        rocznik + " " +
+                        cena + " " +
+                        pojemnoscBaterii
+                ;
+    }
 }

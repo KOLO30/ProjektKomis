@@ -46,11 +46,13 @@ public class MenuSprzedawcy {
         int b= inputData.InputInt();
         switch (b){
             case 1:
-                listaSamochodow.dodajAuto();
+                listaSamochodow.dodajAuto(b);
                 break;
             case 2:
+                listaSamochodow.dodajAuto(b);
                 break;
             case 3:
+                listaSamochodow.dodajAuto(b);
                 break;
             case 4:
                 menuView();

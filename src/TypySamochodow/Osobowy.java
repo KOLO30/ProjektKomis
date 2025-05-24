@@ -11,11 +11,11 @@ public class Osobowy extends Samochod{
     @Override
     public String toString() {
         return
-                przebieg + ' '+
-                marka + ' ' +
-                model + ' ' +
-                rocznik + ' ' +
-                cena + ' ' +
+                przebieg+" "+
+                marka + " " +
+                model + " " +
+                rocznik + " " +
+                cena + " " +
                 rodzajPaliwa
                 ;
     }

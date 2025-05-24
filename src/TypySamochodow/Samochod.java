@@ -14,24 +14,4 @@ public abstract class Samochod {
         this.rocznik = rocznik;
         this.cena = cena;
     }
-
-    public double getCena() {
-        return cena;
-    }
-
-    public int getRocznik() {
-        return rocznik;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getMarka() {
-        return marka;
-    }
-
-    public int getPrzebieg() {
-        return przebieg;
-    }
 }
