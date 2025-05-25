@@ -1,5 +1,78 @@
 package Dane;
 
-public class Odczyt {
+import TypySamochodow.Osobowy;
 
+import javax.imageio.IIOException;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Odczyt {
+    public static void odczytPliku(int n){
+        //przypisanie ściezki do zmiennej
+        String plik1 = "src/plikiTekstowe/listaSamochodowOsobowych.txt";
+        String plik2 = "src/plikiTekstowe/listaSamochodowElektrycznych.txt";
+        String plik3 = "src/plikiTekstowe/listaSamochodowDostawczych.txt";
+        String p;
+
+        //utworzenie listy przechowującej dane o samochodach
+        List<String> samochodyOsobowe = new ArrayList<>();
+        List<String> samochodyElektryczne = new ArrayList<>();
+        List<String> samochodyDostawcze = new ArrayList<>();
+        List<String> l;
+
+        switch (n){
+            case 1:
+                p=plik1;
+                l=samochodyOsobowe;
+                break;
+            case 2:
+                p=plik2;
+                l=samochodyElektryczne;
+                break;
+            case 3:
+                p=plik3;
+                l=samochodyDostawcze;
+                break;
+            default:
+                return;
+        }
+        //odczytanie i wypisanie na ekran danych o samochodach
+        try (BufferedReader reader = new BufferedReader(new FileReader(p))){
+            String linia= reader.readLine();
+            if(n==1 && linia != null)
+                System.out.println("Auta Osobowe:");
+            else if(n==1 && linia == null)
+                System.out.println("\nBrak aut osobowych\n");
+            if(n==2 && linia != null)
+                System.out.println("Auta Elektryczne:");
+            else if(n==2 && linia == null)
+                System.out.println("\nBrak aut elektrycznych\n");
+            if(n==3 && linia != null)
+                System.out.println("Auta Dostawcze:");
+            else if(n==3 && linia == null)
+                System.out.println("\nBrak aut dostawczych\n");
+
+            int ile=1;
+
+            if(linia!=null){
+                System.out.print(ile +". ");
+                ile++;
+                System.out.println(linia);
+                l.add(linia);
+            }
+            while ((linia = reader.readLine())!= null ){
+                System.out.print(ile +". ");
+                ile++;
+                System.out.println(linia);
+                l.add(linia);
+            }
+        }
+         catch (IOException e) {
+             System.out.println("Błąd podczas odczytu");
+        }
+    }
 }

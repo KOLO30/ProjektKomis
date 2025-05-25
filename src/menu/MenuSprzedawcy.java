@@ -1,14 +1,20 @@
 package menu;
 
 import Dane.InputData;
+import Dane.Odczyt;
+import Dane.Usun;
 import TypySamochodow.ListaSamochodow;
 
 public class MenuSprzedawcy {
     InputData inputData = new InputData();
     ListaSamochodow listaSamochodow = new ListaSamochodow();
+    WyswietlSamochody wyswietlSamochody = new WyswietlSamochody();
+    Usun usun = new Usun();
+
+    //wyswietlanie menu sprzedawcy
     public void menuView(){
         Menu menu = new Menu();
-        System.out.println("Menu Sprzedawcy\n" +
+        System.out.println("\nMenu Sprzedawcy\n" +
                 "1. Wyświetl samochody\n" +
                 "2. Dodaj samochód\n" +
                 "3. Usuń samochód\n" +
@@ -17,12 +23,16 @@ public class MenuSprzedawcy {
         int a = inputData.InputInt();
         switch (a){
             case 1:
-                listaSamochodow.wyswietl();
+                wyswietlSamochody.wyswietl();
+                menuView();
                 break;
             case 2:
                 dodajMenu();
+                menuView();
                 break;
             case 3:
+                usunMenu();
+                menuView();
                 break;
             case 4:
                 menu.menuView();
@@ -36,8 +46,9 @@ public class MenuSprzedawcy {
         }
 
     }
+    //menu dodające nowy samochód do pliku
     public void dodajMenu(){
-        System.out.println("Dodawanie samochodu. Wybierz typ samochodu:\n" +
+        System.out.println("\nDodawanie samochodu. Wybierz typ samochodu:\n" +
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
@@ -46,11 +57,7 @@ public class MenuSprzedawcy {
         int b= inputData.InputInt();
         switch (b){
             case 1:
-                listaSamochodow.dodajAuto(b);
-                break;
             case 2:
-                listaSamochodow.dodajAuto(b);
-                break;
             case 3:
                 listaSamochodow.dodajAuto(b);
                 break;
@@ -60,11 +67,38 @@ public class MenuSprzedawcy {
             case 0:
                 return;
             default:
+                System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 dodajMenu();
                 break;
         }
     }
-    public void usun(){
-
+    //menu usuwające dane o samochodzie z pliku
+    public void usunMenu(){
+        System.out.println("\nUsuwanie samochodu. Wybierz typ samochodu:\n" +
+                "1. Osobowy\n" +
+                "2. Elektryczny\n" +
+                "3. Dostawczy\n" +
+                "4. Powrót\n" +
+                "0. Wyjście");
+        int b= inputData.InputInt();
+        switch (b){
+            case 1:
+            case 2:
+            case 3:
+                Odczyt.odczytPliku(b);
+                System.out.println("Podaj id samochodu który chcesz usunąć");
+                int z = inputData.InputInt();
+                usun.usunZPliku(b,z);
+                break;
+            case 4:
+                menuView();
+                break;
+            case 0:
+                return;
+            default:
+                System.out.println("Uważaj! Podałeś niepoprawne dane.");
+                usunMenu();
+                break;
+        }
     }
 }

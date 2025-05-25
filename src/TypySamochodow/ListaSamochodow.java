@@ -3,18 +3,10 @@ package TypySamochodow;
 import Dane.InputData;
 import Dane.Zapis;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 public class ListaSamochodow {
-    private List<Samochod> auta = new ArrayList<>();
     InputData inputData = new InputData();
-    //dodanie samochodu do listy
+    //dodanie samochodu do pliku
     public void dodajAuto(int b){
-        //auta.add(s);
         System.out.println("Podaj przebieg:");
         int przebieg = inputData.InputInt();
 
@@ -54,20 +46,4 @@ public class ListaSamochodow {
         }
 
     }
-    public void dodajAutoOsobowe(){
-        //dodajAuto();
-        //Zapis.zapisDoPliku();
-    }
-
-
-    //wyświetlanie listy samochodów
-    public void wyswietl(){
-        if(auta.isEmpty()){
-            System.out.println("W naszym komisie nie ma samochodów");
-        }
-        for(int i=0; i<auta.size();i++){
-            System.out.println(i+". "+auta.get(i));
-        }
-    }
-
 }

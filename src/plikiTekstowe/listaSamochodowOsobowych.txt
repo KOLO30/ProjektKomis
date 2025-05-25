@@ -1,0 +1,2 @@
+Przebieg: 10000, Marka: toyota, Model: yaris, Rocznik: 2000, Cena:20000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 1000, Marka: opel, Model: astra, Rocznik: 2000, Cena:20000.0zł, Rodzaj paliwa: benzyna

@@ -1,0 +1,1 @@
+Przebieg: 100000, Marka: mercedes, Model: benz, Rocznik: 1000, Cena:200000.0zł, Ładowność: 19089.0

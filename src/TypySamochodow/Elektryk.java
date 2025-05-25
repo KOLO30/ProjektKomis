@@ -9,12 +9,11 @@ public class Elektryk extends Samochod {
     }
     public String toString() {
         return
-                przebieg+" "+
-                        marka + " " +
-                        model + " " +
-                        rocznik + " " +
-                        cena + " " +
-                        pojemnoscBaterii
-                ;
+                "Przebieg: "+ przebieg+", "+
+                        "Marka: "+marka + ", " +
+                        "Model: "+ model + ", " +
+                        "Rocznik: "+rocznik + ", " +
+                        "Cena:"+cena + "zł, " +
+                        "Pojemność baterii: "+pojemnoscBaterii;
     }
 }

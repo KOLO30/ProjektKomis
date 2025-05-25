@@ -10,11 +10,11 @@ public class Dostawcze extends Samochod {
 
     public String toString() {
         return
-                przebieg+" "+
-                        marka + " " +
-                        model + " " +
-                        rocznik + " " +
-                        cena + " " +
-                        ladownosc;
+                "Przebieg: "+ przebieg+", "+
+                        "Marka: "+marka + ", " +
+                        "Model: "+ model + ", " +
+                        "Rocznik: "+rocznik + ", " +
+                        "Cena:"+cena + "zł, " +
+                        "Ładowność: "+ ladownosc;
     }
 }
