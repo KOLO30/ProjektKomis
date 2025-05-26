@@ -1,5 +1,6 @@
 package Dane;
 
+import Błędy.BladPojazdu;
 import TypySamochodow.Osobowy;
 
 import javax.imageio.IIOException;
@@ -44,15 +45,15 @@ public class Odczyt {
         try (BufferedReader reader = new BufferedReader(new FileReader(p))){
             String linia= reader.readLine();
             if(n==1 && linia != null)
-                System.out.println("Auta Osobowe:");
+                System.out.println("\nAuta Osobowe:");
             else if(n==1 && linia == null)
-                System.out.println("\nBrak aut osobowych\n");
+                System.out.println("\nBrak aut osobowych");
             if(n==2 && linia != null)
-                System.out.println("Auta Elektryczne:");
+                System.out.println("\nAuta Elektryczne:");
             else if(n==2 && linia == null)
-                System.out.println("\nBrak aut elektrycznych\n");
+                System.out.println("\nBrak aut elektrycznych");
             if(n==3 && linia != null)
-                System.out.println("Auta Dostawcze:");
+                System.out.println("\nAuta Dostawcze:");
             else if(n==3 && linia == null)
                 System.out.println("\nBrak aut dostawczych\n");
 

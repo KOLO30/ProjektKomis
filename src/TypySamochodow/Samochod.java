@@ -1,7 +1,7 @@
 package TypySamochodow;
 
 public abstract class Samochod {
-    protected int przebieg;
+    private int przebieg;
     protected String marka;
     protected String model;
     protected int rocznik;
@@ -13,5 +13,13 @@ public abstract class Samochod {
         this.model = model;
         this.rocznik = rocznik;
         this.cena = cena;
+    }
+
+    public int getPrzebieg() {
+        return przebieg;
+    }
+
+    public void setPrzebieg(int przebieg) {
+        this.przebieg = przebieg;
     }
 }

@@ -1,6 +1,16 @@
 package TypySamochodow;
 
-public class Dostawcze extends Samochod {
+public class Dostawcze extends Samochod implements Pojazd {
+    @Override
+    public void glosnosc() {
+        System.out.println("Wysoki poziom głośności pracy silnika");
+    }
+
+    @Override
+    public String typ() {
+        return "Dostawczy";
+    }
+
     protected double ladownosc;
 
     public Dostawcze(int przebieg, String marka, String model, int rocznik, double cena, double ladownosc) {
@@ -10,11 +20,11 @@ public class Dostawcze extends Samochod {
 
     public String toString() {
         return
-                "Przebieg: "+ przebieg+", "+
+                "Przebieg: "+ getPrzebieg()+"km, "+
                         "Marka: "+marka + ", " +
                         "Model: "+ model + ", " +
                         "Rocznik: "+rocznik + ", " +
                         "Cena:"+cena + "zł, " +
-                        "Ładowność: "+ ladownosc;
+                        "Ładowność: "+ ladownosc+"kg";
     }
 }

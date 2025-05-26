@@ -1,1 +1,1 @@
-Przebieg: 100000, Marka: mercedes, Model: benz, Rocznik: 1000, Cena:200000.0zł, Ładowność: 19089.0
+Przebieg: 10000km, Marka: mercedes, Model: benz, Rocznik: 2021, Cena:200000.0zł, Ładowność: 300000.0kg

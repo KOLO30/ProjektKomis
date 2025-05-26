@@ -1,17 +1,12 @@
 package Dane;
 
-import TypySamochodow.Osobowy;
-import TypySamochodow.Samochod;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class Zapis {
     public static void zapisDoPliku(String s,int n){
+        //przypisanie odpowiedniej ścieżki do odpowiadającej zmiennej
        String plik1 = "src/plikiTekstowe/listaSamochodowOsobowych.txt";
         String plik2 = "src/plikiTekstowe/listaSamochodowElektrycznych.txt";
         String plik3 = "src/plikiTekstowe/listaSamochodowDostawczych.txt";
@@ -29,6 +24,7 @@ public class Zapis {
             default:
                 return;
         }
+        //zapis do pliku
        try(BufferedWriter writer = new BufferedWriter(new FileWriter(p,true))){
            writer.write(s);
            writer.newLine();

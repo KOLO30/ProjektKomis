@@ -1,0 +1,20 @@
+Przebieg: 10000km, Marka: mercedes, Model: vito, Rocznik: 2021, Cena: 200000.0zł, Ładowność: 3000.0kg
+Przebieg: 25000km, Marka: ford, Model: transit, Rocznik: 2020, Cena: 150000.0zł, Ładowność: 2800.0kg
+Przebieg: 8000km, Marka: volkswagen, Model: crafter, Rocznik: 2022, Cena: 220000.0zł, Ładowność: 3200.0kg
+Przebieg: 40000km, Marka: renault, Model: master, Rocznik: 2019, Cena: 110000.0zł, Ładowność: 2500.0kg
+Przebieg: 18000km, Marka: fiat, Model: ducato, Rocznik: 2021, Cena: 130000.0zł, Ładowność: 2900.0kg
+Przebieg: 12000km, Marka: iveco, Model: daily, Rocznik: 2020, Cena: 175000.0zł, Ładowność: 3500.0kg
+Przebieg: 22000km, Marka: opel, Model: movano, Rocznik: 2020, Cena: 125000.0zł, Ładowność: 2700.0kg
+Przebieg: 3000km, Marka: peugeot, Model: boxer, Rocznik: 2023, Cena: 190000.0zł, Ładowność: 3100.0kg
+Przebieg: 9000km, Marka: citroen, Model: jumper, Rocznik: 2022, Cena: 160000.0zł, Ładowność: 2800.0kg
+Przebieg: 15000km, Marka: nissan, Model: nv400, Rocznik: 2021, Cena: 140000.0zł, Ładowność: 2600.0kg
+Przebieg: 6000km, Marka: mercedes, Model: sprinter, Rocznik: 2022, Cena: 230000.0zł, Ładowność: 3500.0kg
+Przebieg: 14000km, Marka: ford, Model: transit custom, Rocznik: 2021, Cena: 155000.0zł, Ładowność: 2400.0kg
+Przebieg: 5000km, Marka: volkswagen, Model: transporter, Rocznik: 2022, Cena: 210000.0zł, Ładowność: 3000.0kg
+Przebieg: 32000km, Marka: renault, Model: trafic, Rocznik: 2018, Cena: 95000.0zł, Ładowność: 2200.0kg
+Przebieg: 27000km, Marka: fiat, Model: scudo, Rocznik: 2020, Cena: 115000.0zł, Ładowność: 2100.0kg
+Przebieg: 16000km, Marka: opel, Model: vivaro, Rocznik: 2021, Cena: 135000.0zł, Ładowność: 2300.0kg
+Przebieg: 7000km, Marka: peugeot, Model: expert, Rocznik: 2022, Cena: 145000.0zł, Ładowność: 2500.0kg
+Przebieg: 11000km, Marka: citroen, Model: jumpy, Rocznik: 2021, Cena: 138000.0zł, Ładowność: 2400.0kg
+Przebieg: 3500km, Marka: nissan, Model: nv300, Rocznik: 2022, Cena: 148000.0zł, Ładowność: 2350.0kg
+Przebieg: 20000km, Marka: toyota, Model: proace, Rocznik: 2020, Cena: 128000.0zł, Ładowność: 2600.0kg
