@@ -8,6 +8,7 @@ import TypySamochodow.ListaSamochodow;
 public class MenuKupujacego {
     InputData inputData = new InputData();
     Usun usun = new Usun();
+    //utworzenie menu kupującego
     public void menuView(){
         Menu menu = new Menu();
         WyswietlSamochody wyswietlSamochody = new WyswietlSamochody();
@@ -37,13 +38,13 @@ public class MenuKupujacego {
                 break;
         }
     }
+    //menu kupowanie samochodu
     public void kup(){
         System.out.println("\nKupowanie samochodu. Wybierz typ samochodu:\n" +
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
-                "4. Powrót\n" +
-                "0. Wyjście");
+                "4. Powrót\n");
         int b= inputData.InputInt();
         switch (b){
             case 1:
@@ -53,13 +54,9 @@ public class MenuKupujacego {
                 System.out.println("Podaj id samochodu który chcesz kupić");
                 int z = inputData.InputInt();
                 usun.usunZPliku(b,z);
-                System.out.println("Zakup udany :)");
                 menuView();
                 break;
             case 4:
-                menuView();
-                break;
-            case 0:
                 return;
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");

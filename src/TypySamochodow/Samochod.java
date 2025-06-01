@@ -15,6 +15,14 @@ public abstract class Samochod {
         this.cena = cena;
     }
 
+    public Samochod(double cena) {
+        this.cena = cena;
+    }
+
+    public double getCena() {
+        return cena;
+    }
+
     public int getPrzebieg() {
         return przebieg;
     }

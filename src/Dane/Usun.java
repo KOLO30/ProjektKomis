@@ -36,6 +36,14 @@ public class Usun {
             default:
                 return;
         }
+        //sprawdzanie czy urzytkownik podał poprawną wartość
+        if(d<0 || d>l.size()){
+            System.out.println("Nie znaleziono podanego samochodu");
+            return;
+        }
+        else{
+            l.remove(d-1);
+        }
         //odczyt pliku
         try (BufferedReader reader = new BufferedReader(new FileReader(p))){
             String linia= reader.readLine();
@@ -51,17 +59,10 @@ public class Usun {
                 l.add(linia);
             }
         }
-        //nadpisanie starego pliku nowymi danymi(bez usuniętego samochodu)
         catch (IOException e) {
             throw new RuntimeException(e);
         }
-        if(d<1 && d>l.size()){
-            System.out.println("Nie znaleziono podanego samochodu");
-            return;
-        }
-        else{
-            l.remove(d-1);
-        }
+        //nadpisanie starego pliku nowymi danymi(bez usuniętego samochodu)
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(p))){
             for(String i : l){
                 writer.write(i);
@@ -69,7 +70,7 @@ public class Usun {
             }
         }
         catch (BladPojazdu bladPojazdu){
-            System.out.println("Błąd!" + bladPojazdu.getMessage());
+            throw new BladPojazdu("Błąd!");
         }
         catch (IOException e){
             System.out.println("Błąd podczas zapisu");

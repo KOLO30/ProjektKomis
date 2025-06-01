@@ -1,3 +1,20 @@
-Przebieg: 10000km, Marka: toyota, Model: yaris, Rocznik: 2000, Cena:20000.0zł, Rodzaj paliwa: benzyna
-Przebieg: 1000km, Marka: opel, Model: astra, Rocznik: 2000, Cena:20000.0zł, Rodzaj paliwa: benzyna
-Przebieg: 10000km, Marka: opel, Model: astra, Rocznik: 2010, Cena:30000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 10000km, Marka: toyota, Model: yaris, Rocznik: 2000, Cena: 20000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 75000km, Marka: volkswagen, Model: golf, Rocznik: 2015, Cena: 45000.0zł, Rodzaj paliwa: diesel
+Przebieg: 120000km, Marka: ford, Model: focus, Rocznik: 2012, Cena: 27000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 30000km, Marka: honda, Model: civic, Rocznik: 2019, Cena: 60000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 5000km, Marka: kia, Model: rio, Rocznik: 2022, Cena: 70000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 95000km, Marka: opel, Model: astra, Rocznik: 2011, Cena: 22000.0zł, Rodzaj paliwa: diesel
+Przebieg: 40000km, Marka: renault, Model: clio, Rocznik: 2017, Cena: 38000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 85000km, Marka: seat, Model: ibiza, Rocznik: 2014, Cena: 26000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 130000km, Marka: skoda, Model: fabia, Rocznik: 2010, Cena: 18000.0zł, Rodzaj paliwa: diesel
+Przebieg: 20000km, Marka: mazda, Model: 3, Rocznik: 2021, Cena: 82000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 105000km, Marka: bmw, Model: 1, Rocznik: 2013, Cena: 52000.0zł, Rodzaj paliwa: diesel
+Przebieg: 60000km, Marka: audi, Model: a3, Rocznik: 2016, Cena: 69000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 25000km, Marka: hyundai, Model: i20, Rocznik: 2020, Cena: 59000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 140000km, Marka: peugeot, Model: 208, Rocznik: 2009, Cena: 17000.0zł, Rodzaj paliwa: diesel
+Przebieg: 45000km, Marka: fiat, Model: tipo, Rocznik: 2018, Cena: 43000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 3000km, Marka: toyota, Model: corolla, Rocznik: 2023, Cena: 105000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 110000km, Marka: ford, Model: mondeo, Rocznik: 2011, Cena: 25000.0zł, Rodzaj paliwa: diesel
+Przebieg: 80000km, Marka: nissan, Model: micra, Rocznik: 2013, Cena: 24000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 18000km, Marka: dacia, Model: sandero, Rocznik: 2021, Cena: 45000.0zł, Rodzaj paliwa: benzyna
+Przebieg: 70000km, Marka: citroen, Model: c3, Rocznik: 2015, Cena: 29000.0zł, Rodzaj paliwa: benzyna

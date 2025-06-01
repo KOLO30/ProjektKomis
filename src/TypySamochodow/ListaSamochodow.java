@@ -1,5 +1,6 @@
 package TypySamochodow;
 
+import Błędy.IloscBledow;
 import Dane.InputData;
 import Dane.Zapis;
 
@@ -9,8 +10,12 @@ public class ListaSamochodow {
     InputData inputData = new InputData();
     //dodanie samochodu do pliku
     public void dodajAuto(int b){
-        System.out.println("Podaj przebieg:");
-        int przebieg = inputData.InputInt();
+        int przebieg;
+        do{
+            System.out.println("Podaj przebieg:");
+            przebieg = inputData.InputInt();
+        }while(przebieg<0);
+
 
         System.out.println("Podaj markę:");
         String marka = inputData.InputString();
@@ -25,13 +30,31 @@ public class ListaSamochodow {
             rocznik = inputData.InputInt();
         }while(rocznik>aktualnyRok || rocznik<1885);
 
-        System.out.println("Podaj cene:");
-        double cena = inputData.InputDouble();
+        double cena;
+        int i=0;
+        double[] tab = new double[10];
+        do {
+            System.out.println("Podaj cene:");
+            cena = inputData.InputDouble();
+            tab[i]=cena;
+            i++;
+            if(i>tab.length){
+                try {
+                    throw new IloscBledow("Zbyt wiele razy podałeś złą cenę!");
+                }catch (IloscBledow e){
+                    System.out.println("Błąd, "+ e.getMessage());
+                }
+            }
+        }while(tab[i]<=0);
 
         switch (b){
             case 1:
-            System.out.println("Podaj rodzaj paliwa:");
-            String rodzajPaliwa = inputData.InputString();
+                String rodzajPaliwa;
+                do{
+                    System.out.println("Podaj rodzaj paliwa:");
+                    rodzajPaliwa = inputData.InputString();
+                }while(!rodzajPaliwa.equals("benzyna") && !rodzajPaliwa.equals("diesel"));
+
             Osobowy osobowy = new Osobowy(przebieg,marka,model,rocznik,cena,rodzajPaliwa);
             Zapis.zapisDoPliku(osobowy.toString(),b);
             osobowy.glosnosc();

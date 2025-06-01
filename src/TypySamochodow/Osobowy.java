@@ -6,6 +6,9 @@ public class Osobowy extends Samochod implements Pojazd{
         super(przebieg, marka, model, rocznik, cena);
         this.rodzajPaliwa = rodzajPaliwa;
     }
+    public Osobowy(double cena){
+        super(cena);
+    }
 
     @Override
     public String typ() {

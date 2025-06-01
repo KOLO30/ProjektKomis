@@ -1,0 +1,20 @@
+Przebieg: 10000km, Marka: tesla, Model: model3, Rocznik: 2020, Cena: 200000.0zł, Pojemność baterii: 70kWh
+Przebieg: 5000km, Marka: tesla, Model: modelS, Rocznik: 2021, Cena: 380000.0zł, Pojemność baterii: 100kWh
+Przebieg: 25000km, Marka: nissan, Model: leaf, Rocznik: 2018, Cena: 85000.0zł, Pojemność baterii: 40kWh
+Przebieg: 15000km, Marka: bmw, Model: i3, Rocznik: 2019, Cena: 99000.0zł, Pojemność baterii: 42kWh
+Przebieg: 8000km, Marka: audi, Model: e-tron, Rocznik: 2022, Cena: 320000.0zł, Pojemność baterii: 95kWh
+Przebieg: 12000km, Marka: kia, Model: e-niro, Rocznik: 2021, Cena: 145000.0zł, Pojemność baterii: 64kWh
+Przebieg: 1000km, Marka: hyundai, Model: ioniq5, Rocznik: 2023, Cena: 210000.0zł, Pojemność baterii: 77kWh
+Przebieg: 30000km, Marka: renault, Model: zoe, Rocznik: 2017, Cena: 55000.0zł, Pojemność baterii: 41kWh
+Przebieg: 18000km, Marka: volkswagen, Model: id3, Rocznik: 2020, Cena: 130000.0zł, Pojemność baterii: 58kWh
+Przebieg: 7000km, Marka: ford, Model: mustang mach-e, Rocznik: 2022, Cena: 260000.0zł, Pojemność baterii: 88kWh
+Przebieg: 22000km, Marka: skoda, Model: enyaq, Rocznik: 2021, Cena: 185000.0zł, Pojemność baterii: 77kWh
+Przebieg: 6000km, Marka: mercedes, Model: eqb, Rocznik: 2023, Cena: 280000.0zł, Pojemność baterii: 66kWh
+Przebieg: 14000km, Marka: opel, Model: corsa-e, Rocznik: 2020, Cena: 110000.0zł, Pojemność baterii: 50kWh
+Przebieg: 9500km, Marka: peugeot, Model: e-208, Rocznik: 2021, Cena: 115000.0zł, Pojemność baterii: 50kWh
+Przebieg: 16000km, Marka: dacia, Model: spring, Rocznik: 2022, Cena: 80000.0zł, Pojemność baterii: 27kWh
+Przebieg: 2000km, Marka: tesla, Model: modelY, Rocznik: 2023, Cena: 230000.0zł, Pojemność baterii: 75kWh
+Przebieg: 28000km, Marka: fiat, Model: 500e, Rocznik: 2020, Cena: 92000.0zł, Pojemność baterii: 24kWh
+Przebieg: 11000km, Marka: mini, Model: cooper SE, Rocznik: 2021, Cena: 135000.0zł, Pojemność baterii: 32kWh
+Przebieg: 3500km, Marka: volvo, Model: xc40 recharge, Rocznik: 2023, Cena: 265000.0zł, Pojemność baterii: 78kWh
+Przebieg: 19000km, Marka: mazda, Model: mx-30, Rocznik: 2021, Cena: 108000.0zł, Pojemność baterii: 35kWh

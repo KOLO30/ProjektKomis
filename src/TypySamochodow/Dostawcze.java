@@ -1,6 +1,7 @@
 package TypySamochodow;
 
 public class Dostawcze extends Samochod implements Pojazd {
+    protected double ladownosc;
     @Override
     public void glosnosc() {
         System.out.println("Wysoki poziom głośności pracy silnika");
@@ -10,8 +11,6 @@ public class Dostawcze extends Samochod implements Pojazd {
     public String typ() {
         return "Dostawczy";
     }
-
-    protected double ladownosc;
 
     public Dostawcze(int przebieg, String marka, String model, int rocznik, double cena, double ladownosc) {
         super(przebieg, marka, model, rocznik, cena);

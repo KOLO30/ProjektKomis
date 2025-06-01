@@ -52,8 +52,7 @@ public class MenuSprzedawcy {
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
-                "4. Powrót\n" +
-                "0. Wyjście");
+                "4. Powrót");
         int b= inputData.InputInt();
         switch (b){
             case 1:
@@ -62,9 +61,6 @@ public class MenuSprzedawcy {
                 listaSamochodow.dodajAuto(b);
                 break;
             case 4:
-                menuView();
-                break;
-            case 0:
                 return;
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");
@@ -78,8 +74,7 @@ public class MenuSprzedawcy {
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
-                "4. Powrót\n" +
-                "0. Wyjście");
+                "4. Powrót\n");
         int b= inputData.InputInt();
         switch (b){
             case 1:
@@ -91,9 +86,6 @@ public class MenuSprzedawcy {
                 usun.usunZPliku(b,z);
                 break;
             case 4:
-                menuView();
-                break;
-            case 0:
                 return;
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");

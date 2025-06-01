@@ -11,8 +11,7 @@ public class WyswietlSamochody {
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
                 "4. Wszystkie\n"+
-                "5. Powrót\n" +
-                "0. Wyjście");
+                "5. Powrót");
         int b = inputData.InputInt();
         switch (b){
             case 1:
@@ -26,8 +25,6 @@ public class WyswietlSamochody {
                 }
                 break;
             case 5:
-                //menuSprzedawcy.menuView();
-            case 0:
                 return;
             default:
                 wyswietl();
