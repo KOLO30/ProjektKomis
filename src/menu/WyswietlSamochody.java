@@ -5,6 +5,8 @@ import Dane.Odczyt;
 
 public class WyswietlSamochody {
     InputData inputData = new InputData();
+
+    //wyswietlanie listy samochodów
     public void wyswietl(){
         System.out.println("Wyświetlanie samochodu. Wybierz typ samochodu do oglądania:\n" +
                 "1. Osobowy\n" +
