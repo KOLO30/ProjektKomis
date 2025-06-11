@@ -5,20 +5,20 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Zapis {
-    public static void zapisDoPliku(String s,int n){
+    public static void zapisDoPliku(String s,String n){
         //przypisanie odpowiedniej ścieżki do odpowiadającej zmiennej
        String plik1 = "src/plikiTekstowe/listaSamochodowOsobowych.txt";
         String plik2 = "src/plikiTekstowe/listaSamochodowElektrycznych.txt";
         String plik3 = "src/plikiTekstowe/listaSamochodowDostawczych.txt";
         String p;
         switch (n){
-            case 1:
+            case "1":
                 p=plik1;
                 break;
-            case 2:
+            case "2":
                 p=plik2;
                 break;
-            case 3:
+            case "3":
                 p=plik3;
                 break;
             default:

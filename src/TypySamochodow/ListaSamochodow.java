@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class ListaSamochodow {
     InputData inputData = new InputData();
     //dodanie samochodu do pliku
-    public void dodajAuto(int b){
+    public void dodajAuto(String b){
         int przebieg;
         do{
             System.out.println("Podaj przebieg:");
@@ -38,17 +38,17 @@ public class ListaSamochodow {
             cena = inputData.InputDouble();
             tab[i]=cena;
             i++;
-            if(i>tab.length){
+            if(i>=tab.length){
                 try {
                     throw new IloscBledow("Zbyt wiele razy podałeś złą cenę!");
                 }catch (IloscBledow e){
-                    System.out.println("Błąd, "+ e.getMessage());
+                    System.out.println("Błąd!!! "+ e.getMessage());
                 }
             }
-        }while(tab[i]<=0);
+        }while(cena<=0);
 
         switch (b){
-            case 1:
+            case "1":
                 String rodzajPaliwa;
                 do{
                     System.out.println("Podaj rodzaj paliwa:");
@@ -60,7 +60,7 @@ public class ListaSamochodow {
             osobowy.glosnosc();
             osobowy.typ();
             break;
-            case 2:
+            case "2":
                 System.out.println("Poadj pojemność baterii(kWh):");
                 int pojemnoscBaterii = inputData.InputInt();
                 Elektryk elektryk = new Elektryk(przebieg,marka,model,rocznik,cena,pojemnoscBaterii);
@@ -68,7 +68,7 @@ public class ListaSamochodow {
                 elektryk.glosnosc();
                 elektryk.typ();
                 break;
-            case 3:
+            case "3":
                 System.out.println("Podaj ładowność(kg):");
                 int ladownosc = inputData.InputInt();
                 Dostawcze dostawcze = new Dostawcze(przebieg,marka,model,rocznik,cena,ladownosc);

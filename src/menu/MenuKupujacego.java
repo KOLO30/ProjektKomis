@@ -18,20 +18,20 @@ public class MenuKupujacego {
                 "3. Powrót\n"+
                 "0. Wyjście");
 
-        int a = inputData.InputInt();
+        String a = inputData.InputString();
         switch (a){
-            case 1:
+            case "1":
                 wyswietlSamochody.wyswietl();
                 menuView();
                 break;
-            case 2:
+            case "2":
                 kup();
                 break;
-            case 3:
+            case "3":
                 menu.menuView();
                 break;
-            case 0:
-                    return;
+            case "0":
+                System.exit(0);
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 menuView();
@@ -44,20 +44,24 @@ public class MenuKupujacego {
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
-                "4. Powrót\n");
-        int b= inputData.InputInt();
+                "4. Powrót\n" +
+                "0. Wyjście\n");
+        String b= inputData.InputString();
+        String kupujacy = "kupujacy";
         switch (b){
-            case 1:
-            case 2:
-            case 3:
+            case "1":
+            case "2":
+            case "3":
                 Odczyt.odczytPliku(b);
                 System.out.println("Podaj id samochodu który chcesz kupić");
                 int z = inputData.InputInt();
-                usun.usunZPliku(b,z);
+                usun.usunZPliku(b,z,kupujacy);
                 menuView();
                 break;
-            case 4:
+            case "4":
                 return;
+            case "0":
+                System.exit(0);
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 break;

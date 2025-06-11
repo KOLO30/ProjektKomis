@@ -20,25 +20,25 @@ public class MenuSprzedawcy {
                 "3. Usuń samochód\n" +
                 "4. Powrót\n"+
                 "0. Wyjście");
-        int a = inputData.InputInt();
+        String a = inputData.InputString();
         switch (a){
-            case 1:
+            case "1":
                 wyswietlSamochody.wyswietl();
                 menuView();
                 break;
-            case 2:
+            case "2":
                 dodajMenu();
                 menuView();
                 break;
-            case 3:
+            case "3":
                 usunMenu();
                 menuView();
                 break;
-            case 4:
+            case "4":
                 menu.menuView();
                 break;
-            case 0:
-                return;
+            case "0":
+                System.exit(0);
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 menuView();
@@ -52,16 +52,19 @@ public class MenuSprzedawcy {
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
-                "4. Powrót");
-        int b= inputData.InputInt();
+                "4. Powrót\n"+
+                "0. Wyjście\n");
+        String b= inputData.InputString();
         switch (b){
-            case 1:
-            case 2:
-            case 3:
+            case "1":
+            case "2":
+            case "3":
                 listaSamochodow.dodajAuto(b);
                 break;
-            case 4:
+            case "4":
                 return;
+            case "0":
+                System.exit(0);
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 dodajMenu();
@@ -74,19 +77,23 @@ public class MenuSprzedawcy {
                 "1. Osobowy\n" +
                 "2. Elektryczny\n" +
                 "3. Dostawczy\n" +
-                "4. Powrót\n");
-        int b= inputData.InputInt();
+                "4. Powrót\n"+
+                "0. Wyjście\n");
+        String b= inputData.InputString();
+        String sprzedwaca = "sprzedawca";
         switch (b){
-            case 1:
-            case 2:
-            case 3:
+            case "1":
+            case "2":
+            case "3":
                 Odczyt.odczytPliku(b);
                 System.out.println("Podaj id samochodu który chcesz usunąć");
                 int z = inputData.InputInt();
-                usun.usunZPliku(b,z);
-                break;
-            case 4:
+                usun.usunZPliku(b,z,sprzedwaca);
+                menuView();
+            case "4":
                 return;
+            case "0":
+                System.exit(0);
             default:
                 System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 usunMenu();

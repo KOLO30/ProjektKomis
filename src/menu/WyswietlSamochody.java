@@ -14,21 +14,23 @@ public class WyswietlSamochody {
                 "3. Dostawczy\n" +
                 "4. Wszystkie\n"+
                 "5. Powrót");
-        int b = inputData.InputInt();
+        String b = inputData.InputString();
         switch (b){
-            case 1:
-            case 2:
-            case 3:
+            case "1":
+            case "2":
+            case "3":
                 Odczyt.odczytPliku(b);
                 break;
-            case 4:
+            case "4":
                 for(int i=1;i<4;i++){
-                    Odczyt.odczytPliku(i);
+                    String j = String.valueOf(i);
+                    Odczyt.odczytPliku(j);
                 }
                 break;
-            case 5:
+            case "5":
                 return;
             default:
+                System.out.println("Uważaj! Podałeś niepoprawne dane.");
                 wyswietl();
                 break;
         }

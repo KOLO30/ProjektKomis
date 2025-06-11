@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Odczyt {
-    public static void odczytPliku(int n){
+    public static void odczytPliku(String n){
         //przypisanie ściezki do zmiennej
         String plik1 = "src/plikiTekstowe/listaSamochodowOsobowych.txt";
         String plik2 = "src/plikiTekstowe/listaSamochodowElektrycznych.txt";
@@ -26,15 +26,15 @@ public class Odczyt {
         List<String> l;
 
         switch (n){
-            case 1:
+            case "1":
                 p=plik1;
                 l=samochodyOsobowe;
                 break;
-            case 2:
+            case "2":
                 p=plik2;
                 l=samochodyElektryczne;
                 break;
-            case 3:
+            case "3":
                 p=plik3;
                 l=samochodyDostawcze;
                 break;
@@ -43,18 +43,19 @@ public class Odczyt {
         }
         //odczytanie i wypisanie na ekran danych o samochodach
         try (BufferedReader reader = new BufferedReader(new FileReader(p))){
+            int nn = Integer.parseInt(n);
             String linia= reader.readLine();
-            if(n==1 && linia != null)
+            if(nn==1 && linia != null)
                 System.out.println("\nAuta Osobowe:");
-            else if(n==1 && linia == null)
+            else if(nn==1 && linia == null)
                 System.out.println("\nBrak aut osobowych");
-            if(n==2 && linia != null)
+            if(nn==2 && linia != null)
                 System.out.println("\nAuta Elektryczne:");
-            else if(n==2 && linia == null)
+            else if(nn==2 && linia == null)
                 System.out.println("\nBrak aut elektrycznych");
-            if(n==3 && linia != null)
+            if(nn==3 && linia != null)
                 System.out.println("\nAuta Dostawcze:");
-            else if(n==3 && linia == null)
+            else if(nn==3 && linia == null)
                 System.out.println("\nBrak aut dostawczych\n");
 
             int ile=1;
