@@ -43,6 +43,7 @@ public class ListaSamochodow {
                     throw new IloscBledow("Zbyt wiele razy podałeś złą cenę!");
                 }catch (IloscBledow e){
                     System.out.println("Błąd!!! "+ e.getMessage());
+                    System.exit(0);
                 }
             }
         }while(cena<=0);
